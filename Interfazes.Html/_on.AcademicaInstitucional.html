@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultas Académicas e Institucionales</title>
+  <link rel="stylesheet" href="academicainstitucional.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Consultas Académicas e Institucionales</h2>
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Nombre del solicitante" required />
+
+      <label for="tipo">Tipo de Consulta:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="académica">Académica</option>
+        <option value="institucional">Institucional</option>
+        <option value="financiera">Financiera</option>
+        <option value="otra">Otra</option>
+      </select>
+
+      <label for="prioridad">Prioridad:</label>
+      <select name="prioridad" id="prioridad" required>
+        <option value="">Seleccione</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <label for="mensaje">Mensaje o Pregunta:</label>
+      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escriba su consulta aquí..." required></textarea>
+
+      <button type="submit">Enviar Consulta</button>
+    </form>
+  </div>
+</body>
+</html>

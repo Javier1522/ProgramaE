@@ -1,0 +1,55 @@
+body {
+      background: #849fc8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .registro-container {
+      background: #99ebf7;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+    
+    h2 {
+      margin-bottom: 20px;
+      color: #0c0b0b;
+    }
+    
+    input,
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #050505;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #0b0b0b;
+      font-size: 14px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #95caca;
+      color: #050505;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background: #98c1b7;
+    }

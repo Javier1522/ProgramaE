@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago de Matrícula</title>
+  <link rel="stylesheet" href="PagoMatricula.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Pago de Matrícula</h2>
+    <form action="#" method="post">
+      <input type="text" name="id" placeholder="Identificador del estudiante" required />
+      <input type="text" name="nombre" placeholder="Nombre del estudiante" required />
+
+      <label for="tipo">Tipo de matrícula:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="nuevo/a">Nuevo/a</option>
+        <option value="reingreso">Reingreso</option>
+        <option value="traslado">Traslado</option>
+      </select>
+
+      <label for="prioridad">Prioridad:</label>
+      <select name="prioridad" id="prioridad" required>
+        <option value="">Seleccione</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <button type="submit">Realizar Pago</button>
+    </form>
+  </div>
+</body>
+</html>

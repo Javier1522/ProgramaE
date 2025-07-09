@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #6f8ebc;
+  color: #333;
+}
+
+/* Encabezado */
+.header {
+  background-color: #4c7fa4;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Imagen banner */
+.banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Fortalezas */
+.fortalezas {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  gap: 20px;
+  background-color: #779e88;
+}
+
+.fortalezas-texto h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.fortalezas ul {
+  list-style: square inside;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.fortalezas-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .fortalezas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fortalezas-texto {
+    flex: 1;
+  }
+
+  .fortalezas-img {
+    flex: 1;
+    max-width: 400px;
+  }
+}
+
+/* Login */
+.login {
+  padding: 40px 20px;
+  background-color: #759a75;
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #7fa9a9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-box h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-options {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.login-options a {
+  color: #004080;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #003060;
+}

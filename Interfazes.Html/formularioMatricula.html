@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Matrícula</title>
+  <link rel="stylesheet" href="formulariomatricula.css">
+</head>
+<body>
+
+  <div class="formulario-container">
+    <h2>Formulario de Matrícula</h2>
+    <form>
+      <label for="identificador">Identificador</label>
+      <input type="text" id="identificador" name="identificador" required>
+
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="tipo">Tipo de Matrícula</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccione una opción</option>
+        <option value="ordinaria">Ordinaria</option>
+        <option value="extraordinaria">Extraordinaria</option>
+        <option value="especial">Especial</option>
+      </select>
+
+      <label for="prioridad">Prioridad</label>
+      <select id="prioridad" name="prioridad" required>
+        <option value="">Seleccione prioridad</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <button type="submit">Enviar Matrícula</button>
+    </form>
+  </div>
+
+</body>
+</html>

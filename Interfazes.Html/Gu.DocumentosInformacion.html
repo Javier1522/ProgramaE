@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guardar Documentación</title>
+  <link rel="stylesheet" href="documentosinformacion.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Guardar Documentación</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <input type="text" name="nombre" placeholder="Nombre del documento" required />
+
+      <label for="tipo">Tipo de Documento:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="cedula">Cedula</option>
+        <option value="tarjeta identidad">Tarjeta Identidad</option>
+        <option value="cedula extranjera">Cedula Extranjera</option>
+        <option value="tarjeta ident. extranjera">Tarjeta Identidad extranjera</option>
+        <option value="otro">Otro documento</option>
+      </select>
+
+      <label for="tipo">Tipo de Archivo:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="informe">Informe</option>
+        <option value="tarea">Tarea</option>
+        <option value="acta">Acta</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="prioridad">Prioridad:</label>
+      <select name="prioridad" id="prioridad" required>
+        <option value="">Seleccione</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <label for="archivo">Subir Archivo:</label>
+      <input type="file" name="archivo" id="archivo" required />
+
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error de Autenticación</title>
+  <link rel="stylesheet" href="autenticacioncontraseña.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Iniciar Sesión</h2>
+    <!-- Simulamos un mensaje de error por contraseña incorrecta -->
+    <div class="error-message">⚠ Contraseña incorrecta. Inténtalo de nuevo.</div>
+
+    <form action="#" method="post">
+      <input type="text" name="nombre" placeholder="Nombre de usuario" required />
+
+      <label for="tipo">Tipo de Usuario:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="docente">Docente</option>
+        <option value="admin">Administrador</option>
+      </select>
+
+      <label for="prioridad">Nivel de Prioridad:</label>
+      <select name="prioridad" id="prioridad" required>
+        <option value="">Seleccione</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+
+      <input type="password" name="password" placeholder="Contraseña" required />
+
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+</body>
+</html>
